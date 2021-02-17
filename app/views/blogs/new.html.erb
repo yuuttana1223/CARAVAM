@@ -1,2 +1,16 @@
-<h1>Blogs#new</h1>
-<p>Find me in app/views/blogs/new.html.erb</p>
+<h1>新規投稿</h1>
+<!-- form_with部分 -->
+<%= form_with model:@blog, local:true do |f| %>
+
+  <h4>タイトル</h4>
+  <%= f.text_field :title %>
+
+  <h4>カテゴリー</h4>
+  <%= f.text_field :category %>
+
+  <h4>本文</h4>
+  <%= f.text_area :body %>
+
+  <%= f.submit '投稿' %>
+
+<% end %>
