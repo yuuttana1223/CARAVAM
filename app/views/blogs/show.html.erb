@@ -60,7 +60,8 @@
         <!-- body部分 ここまで -->
       </p>
       <!--"/blogs/#{@blog.id}/edit"-->
-      <!--edit_blog_path(@blog)-->どちらでも可能
+      <!--edit_blog_path(@blog)-->
+      <!--どちらでも可能-->
       <%= link_to "編集", edit_blog_path(@blog.id) %>
       <%= link_to "削除", blog_path(@blog.id), method: :delete %>
       <div class="author-case">
